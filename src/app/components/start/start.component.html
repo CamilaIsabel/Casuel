@@ -1,0 +1,31 @@
+<div class="pt-4 ">
+    <span class="text-white sm:text-5xl sm:font-bold block text-2xl font-semibold">Custom Furniture</span>
+    <div class="pt-4 sm:pt-8 w-72 sm:w-96 ">
+        <span class="text-violet-100  text-white  text-lg sm:font-normal font-light">
+            We characterize ourselves byadjusting to your needs,
+            putting our passion in every detail, thus achieving
+            high quality items. quality and durability.
+        </span>
+        <div class="pt-8">
+            <a href=""  >
+                <div class="bg-violet-800 rounded-full w-24 h-8 items-center flex justify-center cursor-pointer text-white text-sm font-semibold">See Stock</div>
+            </a>
+        </div>
+    </div>
+    <div class="md:scale-[0.75]  scale-[0.44] absolute  bottom-10 md:bottom-32 right-20 md:right-64">
+            <carousel (carouselPhoto)="openCarouselModal($event)" [carouselPhotos]="carouselPhotos"></carousel>
+    </div>
+</div>
+
+<!--  -->
+
+<div class="" *ngIf="modalIsOpen" (click)="closeModal()"
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center z-10">
+    <div (click)="$event.stopPropagation()">
+      <img [src]="currentPhotoInModal.src" [alt]="currentPhotoInModal.alt" class="pt-8 pb-8 w-full h-screen items-center"> 
+       <div class="bg-red-600 w-96 h-96 items center pt-8"></div>
+    </div>
+    <div>
+        <button class="text-3xl text-white absolute top-3 right-32" (click)="closeModal()">X</button>
+    </div>
+</div>

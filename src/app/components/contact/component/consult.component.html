@@ -1,0 +1,39 @@
+<div class="bg-custom-violet p-4 rounded-2xl w-full h-full mt-4 relative drop-shadow-xl ">
+    <div class="flex justify-between">
+        <div class="flex flex-col gap-3 pr-6 h-full ">
+            <span class="sm:text-2xl  text-base font-bold text-white">We will wait for you!</span>
+        <a href=""><div class="flex cursor-pointer sm:pt-4">
+            <img src="/assets/icons/contact/location2.svg" alt="location" class="sm:pr-2 pr-1"><span class="text-violet-100 text-xs font-semibold">Gral. Flores 2537 Montevideo</span>
+        </div></a>
+    
+        <a href=""><div class="flex cursor-pointer">
+            <img src="/assets/icons/contact/call.svg" alt="phone" class="sm:pr-2 pr-1"><span class="text-violet-100 text-xs font-semibold">2202 0151</span>
+        </div></a>
+
+        <a href=""><div class="flex cursor-pointer hover:underline underline-offset-2 ">
+            <img src="/assets/icons/contact/gmail.svg" alt="gmail" class="sm:pr-2 pr-1"><span class="consult text-violet-100 sm:text-xs sm:font-semibold hover:text-indigo-600">carnuelamoblamientos@hotmail.com</span>
+        </div></a>
+           
+        <a href=""><div class="sm:absolute absolute bottom-4 sm:bottom-6">
+            <button class="consult sm:px-6 sm:py-1 px-2 py-0  sm:font-bold font-semibold text-xs text-violet-500 rounded-full items-center border-solid border border-violet-500">Consult</button>
+        </div></a>
+    </div>
+
+
+
+        <div class="flex justify-end w-30  md:w-48">
+            <img src="/assets/icons/contact/ubication.svg" alt="mapa" (click)="openModal()" class="cursor-pointer transform transition-all hover:scale-105">
+        </div>
+    </div>
+
+</div>
+
+<div *ngIf="modalIsOpen" (click)="closeModal()"
+    class="absolute z-10 top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center ">
+    <div (click)="$event.stopPropagation()">
+        <img src="/assets/icons/contact/ubication.svg" alt="mapa" class="w-full pt-8 pb-8 h-screen items-center z-0">
+    </div>
+    <div>
+        <button class="text-3xl text-white absolute top-3 right-96 " (click)="closeModal()">X</button>
+    </div>
+</div>

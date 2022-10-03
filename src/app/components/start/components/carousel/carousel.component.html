@@ -1,0 +1,9 @@
+    <div id="drag" class="">
+        <div id="spin" class="">
+            <img *ngFor="let photo of carouselPhotos" (click)="openCarouselModal(photo)" [src]="photo.src" [alt]="photo.alt" class="z-10 cursor-pointer" >
+        </div>
+        <div id="ground"></div>
+    </div>
+    
+
+

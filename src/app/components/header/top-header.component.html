@@ -1,0 +1,17 @@
+<div class="h-20 w-full flex items-center">
+    <div class="flex items-center text-sm font-semibold justify-end gap-0 sm:gap-10">
+        <a routerLink='/home'><span
+            [ngClass]="{'text-violet-500' : router.url == '/home'}"
+            class="hover:text-violet-500 text-white cursor-pointer flex justify-center p-2">Home</span></a>
+        <a [routerLink]="['/articles']"><span
+            [ngClass]="{'text-violet-500' : router.url == '/articles'}"
+            class="hover:text-violet-500  text-white cursor-pointer flex justify-center p-2 ">Articles</span></a>
+        <a [routerLink]="['/about']"><span
+            [ngClass]="{'text-violet-500' : router.url == '/about'}"
+            class="hover:text-violet-500  text-white cursor-pointer flex justify-center p-2 ">About</span></a>
+        <a [routerLink]="['/contact']"><span
+            [ngClass]="{'text-violet-500' : router.url == '/contact'}"
+            class="hover:text-violet-500 text-white cursor-pointer flex justify-center p-2 ">Contact</span></a>
+    </div>
+
+</div>

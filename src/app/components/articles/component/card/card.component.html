@@ -1,0 +1,66 @@
+<div class="duration-100 rounded-2xl w-full p-6 bg-custom-violet flex relative z-0">
+    <div class="pr-4 md:w-52 lg:w-72 xl:w-72 lg:w-56">
+        <div>
+            <span class="text-white text-lg sm:text-2xl font-bold sm:block">{{cardData.title}}</span>
+        </div>
+        <span class="text-violet-100 text-normal font-normal sm:pt-4 sm:block">{{cardData.description}}</span><br>
+        <div (click)="openView()" class="absolute bottom-6">
+            <button
+                class="view font-bold text-violet-400 rounded-full border-solid border border-violet-400 pr-3 pl-3 pt-1 pb-1">VIEW
+                DETAILS</button>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img [src]="cardData.src" [alt]="cardData.alt" (click)="openModal()"
+                class="cursor-pointer transition-all w-full hover:scale-105">
+        </div>
+    </div>
+</div>
+
+<div *ngIf="modalIsOpen" (click)="closeModal()"
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center z-10">
+    <div (click)="$event.stopPropagation()">
+        <img [src]="cardData.src" [alt]="cardData.alt" class="w-full pt-4 pb-4 h-screen items-center">
+    </div>
+    <div>
+        <button class="text-3xl text-white absolute top-4 right-4" (click)="closeModal()">X</button>
+    </div>
+</div>
+
+<div *ngIf="modalDetailsIsOpen" (click)="closeView()"
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-10">
+    <div (click)="$event.stopPropagation()" class="drop-shadow-xl  max-width">
+        <div class="md:flex md:justify-between md:relative bg-custom-indigo rounded-lg">
+            <div>
+                <div (click)="closeView()" class="absolute flex top-2 left-4 sm:left-2 cursor-pointer z-10 ">
+                    <img src="./assets/icons/articles/arrow-left.svg" alt="arrow" class="pr-2">
+                    <span class="text-violet-400">back to list</span>
+                </div>
+                <div class="sm:w-[28rem] h-72 sm:h-80 bg-custom-violet z-0 flex justify-center items-center rounded-lg">
+                    <div class="gradient h-32 w-44 absolute rounded-r-lg top-0 left-0"></div>
+                    <div class="gradient h-24 w-48 absolute  rounded-t-lg md:bottom-0 bottom-56 left-48 sm:bottom-56 sm:left-60  md:left-54"></div>
+
+                    <div class="flex justify-center items-center">
+                        <img [src]="cardData.details?.src" [alt]="cardData.alt" class="absolute w-64 h-64 p-2">
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-6">
+                <span class="text-white font-bold text-lg sm:text-xl block">{{cardData.title}}</span><br>
+                <span class="text-violet-400 text-sm block">{{cardData.description}}</span>
+                <div class=" pt-2 pb-3">
+                    <span class="text-white font-semibold sm:font-bold text-base sm:text-sm">Description:</span><br>
+                    <span class="text-slate-400  text-sm">{{cardData.details?.description}}</span>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-white font-semibold font-bold text-base sm:text-base">Size:</span>
+                    <div
+                        class="border-violet-400 border-solid border rounded-lg text-white text-xs items-center flex justify-center px-2 text-violet-400">
+                        {{cardData.details?.size}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@ import { StartComponent } from './components/start/start.component';
 // import { StartModule } from './components/start/start.module';
 
 const routes: Routes = [
-  {path: '', pathMatch : 'full', redirectTo: 'start'},
+  {path: '', pathMatch : 'full', redirectTo: '/start'},
   {path:'start',  component:StartComponent},
   {path:'articles', component:ArticlesComponent},
   {path:'about', component:AboutComponent},

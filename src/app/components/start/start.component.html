@@ -1,23 +1,21 @@
 <div class="pt-4 ">
-    <span class="text-white sm:text-5xl sm:font-bold block text-2xl font-semibold">Custom Furniture</span>
-    <div class="pt-4 sm:pt-8 w-72 sm:w-96 ">
-        <span class="text-violet-100  text-white  text-lg sm:font-normal font-light">
+    <span class="text-white sm:text-5xl 2xl:text-7xl block text-2xl font-semibold">Custom Furniture</span>
+    <div class="pt-4 sm:pt-8 w-72 sm:w-96 lg:w-[28rem] xl:w-[32rem] 2xl:w-[46rem] ">
+        <span class="text-violet-100  text-white  lg:text-2xl 2xl:text-4xl md:text-xl sm:font-normal font-light">
             We characterize ourselves byadjusting to your needs,
             putting our passion in every detail, thus achieving
             high quality items. quality and durability.
         </span>
-        <div class="pt-8">
+        <div class="pt-8 2xl:pt-10">
             <a [routerLink]="['/articles']">
-                <div class="bg-violet-800 rounded-full w-24 h-8 items-center flex justify-center cursor-pointer text-white text-sm font-semibold">See Stock</div>
+                <div class="bg-violet-800 hover:bg-violet-700 rounded-full w-24 h-8 2xl:w-36 2xl:h-14 items-center flex justify-center cursor-pointer text-white 2xl:text-2xl text-sm font-semibold">See Stock</div>
             </a>
         </div>
     </div>
-    <div class="md:scale-[0.75]  scale-[0.44] absolute  bottom-10 md:bottom-32 right-20 md:right-64">
+    <div class="md:scale-75 2xl:scale-125 scale-[0.44] absolute 2xl:bottom-64 2xl:right-[28rem] bottom-10 md:bottom-32 right-20 md:right-64">
             <carousel (carouselPhoto)="openCarouselModal($event)" [carouselPhotos]="carouselPhotos"></carousel>
     </div>
 </div>
-
-<!--  -->
 
 <div class="" *ngIf="modalIsOpen" (click)="closeModal()"
     class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center z-10">

@@ -58,5 +58,29 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture4view.svg',
       }
     },
+
+    {
+      title:'kitchen cabinet',
+      src:'./assets/icons/articles/furniture4.svg',
+      alt: 'table4',
+      description:'Excellent for multipurpose functions',
+      details:{
+        description:'Material:Stainless steel, Colour:Black and white, Details: added accessories included',
+        size:'120 X 35 X 80cm',
+        src:'./assets/icons/articles/furniture4view.svg',
+      }
+    },
+
+    {
+      title:'kitchen cabinet',
+      src:'./assets/icons/articles/furniture4.svg',
+      alt: 'table4',
+      description:'Excellent for multipurpose functions',
+      details:{
+        description:'Material:Stainless steel, Colour:Black and white, Details: added accessories included',
+        size:'120 X 35 X 80cm',
+        src:'./assets/icons/articles/furniture4view.svg',
+      }
+    },
   ]  
 }

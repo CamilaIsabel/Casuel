@@ -1,6 +1,6 @@
 <div class="pt-4">
-    <span class="text-white font-bold text-lg sm:text-2xl">Articles</span>
-    <div class="grid md:grid grid-cols-1 md:grid-cols-2 w-full gap-8 sm:gap-16 lg-gap-20 xl:gap-y-20 xl:gap-40 mt-4 pb-4">
+    <span class="text-white font-bold text-lg sm:text-2xl 2xl:text-3xl">Articles</span>
+    <div class="grid md:grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 mt-4 absolute sm:left-20 left-5 right-5 max-w-max md:max-w-none sm:right-20 gap-20 sm:gap-24 md:gap-28 lg:gap-32 lg:gap-y-20 xl:gap-40 xl:gap-y-20 2xl:gap-y-32 ">
         <card *ngFor="let card of cards" class="mx-auto" [cardData]="card"></card>
     </div>
 </div>

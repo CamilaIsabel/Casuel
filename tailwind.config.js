@@ -16,10 +16,13 @@ module.exports = {
 
 
         scale: {
-          '55': '0.55',
+          '55': '0.75',
         },
         scale: {
           '44': '0.44',
+        },
+        scale: {
+          '60': '0.90',
         },
 
 
@@ -34,6 +37,12 @@ module.exports = {
         },
         width: {
           '200': '46rem',
+        },
+        width: {
+          '300': '52rem',
+        },
+        width: {
+          '400': '58rem',
         },
 
         height: {
@@ -51,9 +60,14 @@ module.exports = {
 
       gap:{
         '36': '36rem',
+      },
+
+      margin: {
+        '37rem': '37rem',
+      },
+      inset: {
+        '28rem': '28rem',
       }
-
-
 
 
       }

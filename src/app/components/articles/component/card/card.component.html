@@ -1,12 +1,11 @@
-<div class="duration-100 rounded-2xl w-full p-6 bg-custom-violet flex  z-0">
+<div class="duration-100 rounded-2xl w-full p-6 bg-custom-violet 2xl:h-80 mb-4 h-64 flex z-0">
     <div class="pr-4 md:w-52 lg:w-72 relative w-56">
         <div>
-            <span class="text-white text-lg sm:text-2xl font-bold sm:block">{{cardData.title}}</span>
+            <span class="text-white text-xl sm:text-2xl xl:text-3xl pb-4 xl:pb-8 font-bold sm:block">{{cardData.title}}</span>
         </div>
-        <span class="text-violet-100 text-normal font-normal ">{{cardData.description}}</span><br>
-        <button class="view font-bold text-violet-400 rounded-full border-solid border border-violet-400 pr-3 pl-3 pt-1 pb-1 absolute bottom-0" (click)="openView()">VIEW
+        <span class="text-violet-100 text-lg lg:text-xl xl:text-2xl lg-font-normal">{{cardData.description}}</span><br>
+        <button class="hover:text-white  hover:bg-violet-400  text-xs xl:text-sm font-bold text-violet-400 rounded-full border-solid border border-violet-400 pr-3 pl-3 pt-1 pb-1 absolute bottom-0" (click)="openView()">VIEW
         DETAILS</button>
-        
     </div>
     <div>
         <div>
@@ -26,39 +25,36 @@
     </div>
 </div>
 
-<div *ngIf="modalDetailsIsOpen" (click)="closeView()"
-    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-10">
-    <div (click)="$event.stopPropagation()" class="drop-shadow-xl  max-width">
-        <div class="md:flex md:justify-between md:relative bg-custom-indigo rounded-lg">
-            <div>
-                <div (click)="closeView()" class="absolute flex top-2 left-4 sm:left-2 cursor-pointer z-10 ">
-                    <img src="./assets/icons/articles/arrow-left.svg" alt="arrow" class="pr-2">
-                    <span class="text-violet-400">back to list</span>
-                </div>
-                <div class="sm:w-[28rem] h-72 h-80 bg-custom-violet z-0 flex justify-center items-center rounded-lg">
-                    <div class="gradient h-32 w-44 absolute rounded-r-lg top-0 left-0"></div>
-                    <div class="gradient h-24 w-48 absolute  rounded-t-lg md:bottom-0 bottom-56 left-48 sm:bottom-56 sm:left-60  md:left-54"></div>
+<div *ngIf="modalDetailsIsOpen" (click)="closeView()" class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-10">
+    <div (click)="$event.stopPropagation()" class="drop-shadow-xl bg-custom-indigo sm:w-[46rem] xl:w-[52rem] xl:h-96 sm:h-80 rounded-lg  sm:flex sm:justify-between absolute sm:relative left-5 right-5">
 
-                    <div class="flex justify-center items-center">
-                        <img [src]="cardData.details?.src" [alt]="cardData.alt" class="absolute w-64 h-64 p-2">
-                    </div>
-                </div>
-
-            </div>
-            <div class="p-6 w-96">
-                <span class="text-white font-bold text-lg sm:text-xl block">{{cardData.title}}</span><br>
-                <span class="text-violet-400 text-sm block">{{cardData.description}}</span>
-                <div class=" pt-2 pb-3">
-                    <span class="text-white font-semibold sm:font-bold text-base sm:text-sm">Description:</span><br>
-                    <span class="text-slate-400  text-sm">{{cardData.details?.description}}</span>
-                </div>
-                <div class="flex gap-2">
-                    <span class="text-white font-semibold font-bold text-base sm:text-base">Size:</span>
-                    <div
-                        class="border-violet-400 border-solid border rounded-lg text-white text-xs items-center flex justify-center px-2 text-violet-400">
-                        {{cardData.details?.size}}</div>
-                </div>
-            </div>
+    <div class="sm:w-[32rem] h-full sm:rounded-l-lg  p-12 h-full bg-custom-violet flex justify-center  items-center relative">
+        <div (click)="closeView()" class="absolute flex top-2 left-4 sm:left-2 cursor-pointer z-10">
+            <img src="./assets/icons/articles/arrow-left.svg" alt="arrow" class="pr-2">
+            <span class="text-violet-400">back to list</span> 
+        </div> 
+        <img [src]="cardData.details?.src" [alt]="cardData.alt" class="z-10 w-64 h-64">
+        <div class="z-0">
+            <div class="gradient h-32 w-44 absolute top-0 left-0"></div>
+            <div class="gradient h-16 w-48 absolute bottom-0 right-0"></div>
+        </div>  
+    </div>
+       
+            
+    <div class="p-8 sm:w-[32rem] h-full bg-custom-indigo sm:rounded-r-lg ">
+        <span class="text-white font-bold text-lg sm:text-xl block">{{cardData.title}}</span><br>
+        <span class="text-violet-400 text-sm block">{{cardData.description}}</span>
+        <div class="pt-2 pb-3">
+            <span class="text-white font-semibold sm:font-bold text-base sm:text-sm">Description:</span><br>
+            <span class="text-slate-400  text-sm">{{cardData.details?.description}}</span>
+        </div>
+        <div class="flex gap-2">
+            <span class="text-white font-semibold font-bold text-base sm:text-base">Size:</span>
+        <div
+            class="border-violet-400 border-solid border rounded-lg text-white text-xs items-center flex justify-center px-2 text-violet-400">
+            {{cardData.details?.size}}</div>
         </div>
     </div>
+       
+    
 </div>

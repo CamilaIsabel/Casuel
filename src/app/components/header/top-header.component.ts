@@ -13,7 +13,6 @@ export class TopHeaderComponent {
    }
 
    ngOnInit(){
-    console.log()
     
    }
 }

@@ -3,6 +3,17 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        xs: '440px',
+        sm:'600px',
+        md: '960px',
+        mmd: '1175px',
+        lg: '1280px',
+        x: '1350px',
+        xl: '1510px',
+        xxl: '1660px',
+        xxxl: '1880px'
+      },
       colors: {
         'custom-blue': {
           DEFAULT: '#080819',

@@ -1,18 +1,18 @@
 <div class="pt-4 ">
-    <span class="text-white sm:text-5xl 2xl:text-7xl block text-2xl font-semibold">Custom Furniture</span>
-    <div class="pt-4 sm:pt-8 w-72 sm:w-96 lg:w-[28rem] xl:w-[32rem] 2xl:w-[46rem] ">
-        <span class="text-violet-100  text-white  lg:text-2xl 2xl:text-4xl md:text-xl sm:font-normal font-light">
+    <span class="text-white md:text-5xl block text-center md:text-left text-4xl font-bold">Custom Furniture</span>
+    <div class="pt-4 md:pt-8 md:w-96 lg:w-[28rem] xl:w-[32rem] 2xl:w-[46rem] w-full text-center md:text-left ">
+        <span class="text-white xl:text-lg">
             We characterize ourselves byadjusting to your needs,
             putting our passion in every detail, thus achieving
             high quality items. quality and durability.
         </span>
-        <div class="pt-8 2xl:pt-10">
-            <a [routerLink]="['/articles']">
-                <div class="bg-violet-800 hover:bg-violet-700 rounded-full w-24 h-8 2xl:w-36 2xl:h-14 items-center flex justify-center cursor-pointer text-white 2xl:text-2xl text-sm font-semibold">See Stock</div>
-            </a>
-        </div>
+
+        <button class="bg-violet-800 mx-auto hover:bg-violet-700 rounded-md flex items-center justify-center md:mx-0 w-full md:w-auto md:px-5 py-2 mt-6" [routerLink]="['/articles']">
+            <span class="text-white font-semibold text-sm xl:text-base">See Stock</span>
+        </button>
+
     </div>
-    <div class="md:scale-75 2xl:scale-125 scale-[0.44] absolute 2xl:bottom-64 2xl:right-[28rem] bottom-10 md:bottom-32 right-20 md:right-64">
+    <div class="left-1/2 transform -translate-x-1/2 lg:left-auto lg:-translate-x-0 scale-[0.4] sm:scale-75 lg:scale-90 xl:scale-100 2xl:scale-105 absolute bottom-24 sm:bottom-64 lg:right-[28rem]">
             <carousel (carouselPhoto)="openCarouselModal($event)" [carouselPhotos]="carouselPhotos"></carousel>
     </div>
 </div>

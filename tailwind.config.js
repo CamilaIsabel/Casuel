@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  theme: {
+  darkMode: 'class',
+   theme: {
     extend: {
       screens: {
         xs: '440px',
@@ -23,6 +24,9 @@ module.exports = {
         },
         'custom-indigo': {
           DEFAULT: '#0E0226',
+        },
+        'custom-purple': {
+          DEFAULT: '#280E60',
         },
 
 

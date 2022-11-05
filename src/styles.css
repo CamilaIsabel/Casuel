@@ -3,8 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* Custom scrollbar CSS */
 * { scrollbar-width: auto!important; scrollbar-color: #8B5CF6 #080819!important; }
 *::-webkit-scrollbar { width: 11px!important; }
 *::-webkit-scrollbar-track { background: #080819!important; }
 *::-webkit-scrollbar-thumb { background-color: #8B5CF6!important; border-radius: 10px!important; border: 3px solid #080819!important; }
+
+
+
+
+    

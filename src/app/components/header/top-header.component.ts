@@ -20,8 +20,6 @@ export class TopHeaderComponent {
       document.documentElement.classList.remove('dark');
       this.isDarkMode= false
     }
-   
-
   };
 
   toggleThemeMode() {

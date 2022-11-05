@@ -3,12 +3,12 @@
         <div class="flex items-center gap-x-2 cursor-pointer" [routerLink]="['/']">
             <img src="./assets/icons/logo.svg" alt="logo" class="h-9 w-9">
             <span class="hidden xl:inline text-custom-purple dark:text-white font-bold text-2xl pr-2">Casuel</span>
-            <div class="bg-violet-200 flex px-1 py-1 rounded-md gap-x-2" (click)="toggleThemeMode()">
-                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class=" h-6 w-6"></button>
+            <div class="bg-violet-200 hidden sm:flex  items-center justify-center toggle rounded-md gap-x-2" (click)="toggleThemeMode()">
+                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class="w-7 h-7"></button>
                 <button *ngIf="!isDarkMode"><img src="./assets/icons/sun.svg" alt="sun" class="w-6 h-6"></button>
             </div> 
         </div>
-         <div class="text-sm font-semibold text-custom-violet dark:text-white items-center flex gap-x-6">
+         <div class="text-sm font-semibold text-custom-violet dark:text-white items-center flex gap-x-3 sm:gap-x-6">
                 <a routerLink='/start'><span
                     [ngClass]="{'text-violet-500' : router.url == '/start'}"
                     class="hover:text-violet-500  cursor-pointer ">Home</span></a>

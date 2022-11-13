@@ -6,13 +6,11 @@ import { Component  } from '@angular/core';
   styleUrls: ['./consult.component.css']
 })
 export class  ConsultComponent {
- 
   modalIsOpen: boolean = false;
   
   openModal() {
     this.modalIsOpen = true;
   }
-
   closeModal(){
     this.modalIsOpen = false;
   }

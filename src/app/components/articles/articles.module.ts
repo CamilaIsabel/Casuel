@@ -7,7 +7,6 @@ import { CardComponent } from './component/card/card.component';
   declarations: [
   ArticlesComponent,
   CardComponent
-  
   ],
   imports: [
     BrowserModule

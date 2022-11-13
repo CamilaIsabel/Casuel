@@ -117,17 +117,14 @@ export class CarouselComponent {
     };
 
   }
-
-
   openCarouselModal(photo:Photo){
     this.carouselPhoto.emit(photo)
   }
 
   ngOnInit(): void {
-   
     setTimeout(() =>{
-      this.init(200)
-    }, 200);
+      this.init(100)
+    }, 100);
   }
 }
 

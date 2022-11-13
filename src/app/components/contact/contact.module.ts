@@ -7,7 +7,6 @@ import { ContactComponent } from './contact.component';
   declarations: [
    ContactComponent,
    ConsultComponent
-    
   ],
   imports: [
     BrowserModule
@@ -15,5 +14,4 @@ import { ContactComponent } from './contact.component';
   providers: [],
 })
 export class ContactModule {
-
- }
+}

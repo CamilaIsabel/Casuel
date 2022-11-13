@@ -1,3 +1,4 @@
+import { keyframes } from '@angular/animations';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,8 +9,13 @@ import { Router } from '@angular/router';
 })
 export class TopHeaderComponent {
   isDarkMode: boolean = true
-  presentTheme$: any;
-
+  modalIsOpen: boolean = false;
+  openModalNavbar() {
+    this.modalIsOpen = true;
+  }
+  closeModalNavbar(){
+    this.modalIsOpen = false;
+  };
   constructor(public router: Router) {
   }
   ngOnInit() { 
@@ -21,7 +27,6 @@ export class TopHeaderComponent {
       this.isDarkMode= false
     }
   };
-
   toggleThemeMode() {
     this.isDarkMode
     ? localStorage['theme'] = 'light'
@@ -40,7 +45,8 @@ export class TopHeaderComponent {
     }
   }
 };
- 
+
+
 
 
 

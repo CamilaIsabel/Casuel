@@ -12,7 +12,6 @@ import { StartComponent } from './start.component';
   imports: [
     BrowserModule,
     RouterModule,
-    
   ],
   providers: [],
 

@@ -1,11 +1,10 @@
 .view{
     font-size: 9px;
 }
-
 .gradient{
     background: linear-gradient(286.35deg, #C4B5FD -2.4%, #8288D7 148.74%);
     opacity: 0.1;
     filter: blur(30px);
     transform: matrix( -0.09, -0.09, 1, 0, 0);
-    ;
+    
 }

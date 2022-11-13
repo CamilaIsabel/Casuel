@@ -15,7 +15,6 @@ export class StartComponent implements OnInit {
    this.currentPhotoInModal= photo
     this.modalIsOpen = true;
   }
-
   closeModal(){
     this.modalIsOpen = false;
   }

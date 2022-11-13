@@ -17,13 +17,13 @@
     </div>
 </div>
 
-<div class="" *ngIf="modalIsOpen" (click)="closeModal()"
+<div *ngIf="modalIsOpen" (click)="closeModal()"
     class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center z-10">
     <div (click)="$event.stopPropagation()">
       <img [src]="currentPhotoInModal.src" [alt]="currentPhotoInModal.alt" class="pt-8 pb-8 w-full h-screen items-center"> 
        <div class="bg-red-600 w-96 h-96 items center pt-8"></div>
     </div>
     <div>
-        <button class="text-3xl text-white absolute top-3 right-32" (click)="closeModal()">X</button>
+        <button class="text-3xl text-white fixed top-3 right-5" (click)="closeModal()">X</button>
     </div>
 </div>

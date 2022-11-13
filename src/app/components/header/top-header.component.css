@@ -1,4 +1,16 @@
 .toggle{
-    width:34px;
-    height: 34px;
+    width:30px;
+    height: 30px;
 }
+.navbar{
+  animation:open 1s ease;  
+}
+@keyframes open{
+ from{
+  transform:translateX(-100%);
+ } 
+};
+
+
+
+

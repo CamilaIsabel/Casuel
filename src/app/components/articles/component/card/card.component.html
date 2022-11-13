@@ -2,12 +2,13 @@
     <div class="h-full flex flex-col justify-between pr-6">
         <div>
             <span class="text-violet-400 dark:text-white text-xl font-bold block">{{cardData.title}}</span>
-            <span class="text-gray-700 dark:text-violet-100 mt-4 text-base sm:text-lg">{{cardData.description}}</span><br>
+            <span
+                class="text-gray-700 dark:text-violet-100 mt-4 text-base sm:text-lg">{{cardData.description}}</span><br>
         </div>
         <button
             class="hover:text-white dark:hover:text-white max-w-fit hover:bg-violet-600 dark:hover:bg-violet-400 text-xs font-bold dark:text-violet-400 text-violet-600 rounded-md border-solid border dark:border-violet-400 border-violet-600 pr-3 pl-3 pt-1 pb-1"
             (click)="openView()">
-            <span >VIEW DETAILS</span>
+            <span>VIEW DETAILS</span>
         </button>
     </div>
     <div class="flex items-center">
@@ -27,7 +28,7 @@
 </div>
 
 <div *ngIf="modalDetailsIsOpen" (click)="closeView()"
-    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full  flex justify-center items-center z-10">
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-10">
     <div (click)="$event.stopPropagation()"
         class="drop-shadow-xl bg-custom-indigo sm:w-[46rem] xl:w-[52rem] xl:h-96 sm:h-80 rounded-lg  sm:flex sm:justify-between absolute sm:relative left-5 right-5">
 
@@ -46,17 +47,20 @@
 
 
         <div class="p-8 sm:w-[32rem] h-full bg-white dark:bg-custom-indigo sm:rounded-r-lg ">
-            <span class="text-violet-400 dark:text-white font-bold text-lg sm:text-xl block">{{cardData.title}}</span><br>
+            <span
+                class="text-violet-400 dark:text-white font-bold text-lg sm:text-xl block">{{cardData.title}}</span><br>
             <span class="text-gray-700 dark:text-violet-400 text-sm block">{{cardData.description}}</span>
             <div class="pt-2 pb-3">
-                <span class="text-violet-900 dark:text-white font-semibold sm:font-bold text-base sm:text-sm">Description:</span><br>
+                <span
+                    class="text-violet-900 dark:text-white font-semibold sm:font-bold text-base sm:text-sm">Description:</span><br>
                 <span class="text-gray-500 dark:text-slate-400  text-sm">{{cardData.details?.description}}</span>
             </div>
             <div class="flex items-center gap-2">
-                <span class="text-violet-900 dark:text-white font-semibold sm:font-bold text-base sm:text-sm">Size:</span>
+                <span
+                    class="text-violet-900 dark:text-white font-semibold sm:font-bold text-base sm:text-sm">Size:</span>
                 <div
                     class="dark:border-violet-400 border-violet-600 border-solid border rounded-md text-xs items-center flex justify-center px-2 text-violet-600 dark:text-violet-400">
                     {{cardData.details?.size}}</div>
             </div>
         </div>
-</div>
+    </div>

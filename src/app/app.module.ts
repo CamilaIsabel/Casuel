@@ -13,15 +13,10 @@ import { TopHeaderModule } from './components/header/top-header.module';
 import { ArticlesModule } from './components/articles/articles.module';
 import { ContactModule } from './components/contact/contact.module';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    
-  
+    AboutComponent,  
   ],
   imports: [
     BrowserModule,
@@ -32,8 +27,6 @@ import { ContactModule } from './components/contact/contact.module';
     TopHeaderModule,
     ArticlesModule,
     ContactModule,
-
-   
   ],
   providers: [],
   bootstrap: [AppComponent]

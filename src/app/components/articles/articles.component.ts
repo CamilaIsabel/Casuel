@@ -21,7 +21,6 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture1view.svg',
       }
     },   
-    
     {
       title:'oak wardrobee',
       src: './assets/icons/articles/furniture3.svg',
@@ -57,7 +56,6 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture4view.svg',
       }
     },
-
     {
       title:'kitchen cabinet',
       src:'./assets/icons/articles/furniture4.svg',
@@ -69,7 +67,6 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture4view.svg',
       }
     },
-
     {
       title:'kitchen cabinet',
       src:'./assets/icons/articles/furniture4.svg',
@@ -81,7 +78,6 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture4view.svg',
       }
     },
-
     {
       title:'Coffe table',
       src:'./assets/icons/articles/furniture1.svg',
@@ -93,7 +89,6 @@ export class ArticlesComponent {
         src:'./assets/icons/articles/furniture1view.svg',
       }
     },   
-    
     {
       title:'oak wardrobee',
       src: './assets/icons/articles/furniture3.svg',

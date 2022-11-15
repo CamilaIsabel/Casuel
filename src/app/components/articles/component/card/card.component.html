@@ -13,22 +13,22 @@
     </div>
     <div class="flex items-center">
         <img [src]="cardData.src" [alt]="cardData.alt" (click)="openModal()"
-            class="cursor-pointer transition-all hover:scale-105">
+            class="cursor-pointer">
     </div>
 </div>
 
 <div *ngIf="modalIsOpen" (click)="closeModal()"
-    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen  flex justify-center z-10">
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-screen flex justify-center z-30">
     <div (click)="$event.stopPropagation()">
         <img [src]="cardData.src" [alt]="cardData.alt" class="w-full pt-4 pb-4 h-screen items-center">
     </div>
     <div>
-        <button class="text-3xl text-white absolute top-4 right-4" (click)="closeModal()">X</button>
+        <button class="text-3xl text-white absolute top-4 right-2 sm:right-10" (click)="closeModal()">X</button>
     </div>
 </div>
 
 <div *ngIf="modalDetailsIsOpen" (click)="closeView()"
-    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-10">
+    class="fixed top-0 left-0 bg-custom-blue bg-opacity-75 w-full h-full flex justify-center items-center z-30">
     <div (click)="$event.stopPropagation()"
         class="drop-shadow-xl bg-custom-indigo sm:w-[46rem] xl:w-[52rem] xl:h-96 sm:h-80 rounded-lg  sm:flex sm:justify-between absolute sm:relative left-5 right-5">
 

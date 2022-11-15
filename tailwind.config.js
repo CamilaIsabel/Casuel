@@ -40,7 +40,7 @@ module.exports = {
           '60': '0.90',
         },
 
-
+        
         width: {
           '98': '28rem',
         },
@@ -49,6 +49,9 @@ module.exports = {
         },
         width: {
           '130': '36rem',
+        },
+        width: {
+          '180': '40rem',
         },
         width: {
           '200': '46rem',

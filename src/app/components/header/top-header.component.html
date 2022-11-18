@@ -1,15 +1,10 @@
 <div
-    class="items-center flex justify-between px-4 md:px-20 fixed w-full z-10 border-b dark:border-violet-300 bg-violet-400 bg-opacity-10 border-indigo-700 border-opacity-40 dark:bg-custom-indigo dark:bg-opacity-40 backdrop-blur-sm justify-between py-4 dark:border-opacity-40">
+    class="items-center flex justify-between px-4 md:px-20 fixed w-full z-10 border-b dark:border-violet-400 bg-violet-400 bg-opacity-10 border-violet-900 border-opacity-10 dark:bg-custom-indigo dark:bg-opacity-40 backdrop-blur-sm justify-between py-4 dark:border-opacity-10">
     <div class="flex justify-between w-full">
-        <div class="flex items-center gap-x-2 cursor-pointer" [routerLink]="['/']">
-            <img src="./assets/icons/logo.svg" alt="logo" class="h-9 w-9">
+        <div class="flex items-center justify-center gap-x-2 cursor-pointer" [routerLink]="['/']">
+            <img src="./assets/icons/logo.svg" alt="logo" class="h-8 w-8">
             <span
-                class="inline text-custom-purple dark:text-white font-bold  text-lg md:text-xl xl:text-2xl pr-2">Casuel</span>
-            <div class="hover:dark:bg-violet-300 hover:bg-violet-300 bg-violet-200 hidden sm:flex  items-center justify-center toggle rounded-md gap-x-2"
-                (click)="toggleThemeMode()">
-                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class="w-7 h-7"></button>
-                <button *ngIf="!isDarkMode"><img src="./assets/icons/sun.svg" alt="sun" class="w-6 h-6"></button>
-            </div>
+                class="inline text-custom-purple dark:text-white font-bold items-center text-lg sm:text-xl  xl:text-2xl pr-2">Casuel</span>
         </div>
         <div
             class="text-sm font-semibold text-custom-violet dark:text-white items-center hidden sm:flex gap-x-3 sm:gap-x-6">
@@ -21,7 +16,15 @@
                     class="hover:text-violet-500  cursor-pointer   ">About</span></a>
             <a [routerLink]="['/contact']"><span [ngClass]="{'text-violet-500' : router.url == '/contact'}"
                     class="hover:text-violet-500 cursor-pointer  ">Contact</span></a>
+             <div class="bg-violet-900 bg-opacity-10 dark:bg-violet-400 dark:bg-opacity-10  border-l h-5 dark:border-violet-400  dark:border-opacity-10 border-violet-900 border-opacity-10"></div>       
+
+            <div class="hidden  sm:flex items-center justify-center toggle rounded-md"
+                (click)="toggleThemeMode()">
+                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class="w-5 h-5"></button>
+                <button *ngIf="!isDarkMode"><img src="./assets/icons/sun.svg" alt="sun" class="w-6 h-6"></button>
+            </div>
         </div>
+        
         <div class="block sm:hidden ">
             <button
                 class="hover:bg-violet-400 w-8 h-8 bg-violet-500 items-center backdrop-blur-sm bg-opacity-40 border border-gray-400 dark:border-gray-600 border-opacity-40 p-2 justify-center rounded-md"
@@ -54,10 +57,10 @@
                     class="hover:text-violet-500 cursor-pointer  ">Contact</span></a>
         </div>
         <div class="px-4">
-            <div class="hover:dark:bg-violet-300 hover:bg-violet-300 bg-violet-200 flex items-center justify-center toggle rounded-md"
+            <div class="flex toggle "
                 (click)="toggleThemeMode()">
-                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class="w-6 h-6"></button>
-                <button *ngIf="!isDarkMode"><img src="./assets/icons/sun.svg" alt="sun" class="w-6 h-6"></button>
+                <button *ngIf="isDarkMode"><img src="./assets/icons/moon.svg" alt="moon" class="w-5 h-5"></button>
+                <button *ngIf="!isDarkMode"><img src="./assets/icons/sun.svg" alt="sun" class="w-5 h-5"></button>
             </div>
         </div>
     </div>

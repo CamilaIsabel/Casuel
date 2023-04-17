@@ -1,8 +1,6 @@
 # Casuel💫
-
 #### Features/Overview:
-###### Landing Page that show the daily work of a marble factory
-- The user can handle the displayed data with an admin account.
+###### Landing Page showing the daily work of a company that sells custom furniture and accessories for the home
 
 #### Project developed on Angular.js with TailwindCSS and Firebase.
 
